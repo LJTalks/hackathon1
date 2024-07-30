@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: grey;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
 }
@@ -33,10 +33,14 @@ header {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: black;
 }
 
-a {
+header a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Main Content Style */

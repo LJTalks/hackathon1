@@ -43,6 +43,21 @@ header a {
     color: inherit;
 }
 
+#navlist {
+    font-size: 120%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#navlist > li {
+    margin-bottom: .3em;
+}
+
+.active {
+    font-style: bold;
+    font-weight: 900;
+}
+
 /* Main Content Style */
 main {
     background-color: bisque;

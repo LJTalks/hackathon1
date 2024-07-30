@@ -1,0 +1,72 @@
+/* Importaing Google Fonts "Montserrat" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Overriding Default Style Using Asterisk Wildcard */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Page Body Style */
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic Styles */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+/* Page Header Style */
+header {
+    background-color: lightslategray;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 5px 5px darkgoldenrod;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navlist {
+    font-size: 120%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#navlist > li {
+    margin-bottom: .3em;
+}
+
+.active {
+    font-style: bold;
+    font-weight: 900;
+}
+
+/* Main Content Style */
+main {
+    background-color: bisque;
+    /* Main Content to take up all vertical space  */
+    flex: 1 0 auto
+}
+
+/* Page Footer Style */
+footer {
+    background-color: cyan;
+}

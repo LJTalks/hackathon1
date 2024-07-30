@@ -23,6 +23,11 @@ body {
 /* Page Header Style */
 header {
     background-color: lightslategray;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 5px 5px darkgoldenrod;
 }
 
 h1 {

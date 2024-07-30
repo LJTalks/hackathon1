@@ -1,7 +1,7 @@
 /* Importaing Google Fonts "Montserrat" */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Overriding Default Style Using Asterisk Widlcard */
+/* Overriding Default Style Using Asterisk Wildcard */
 * {
     padding: 0;
     margin: 0;
@@ -36,6 +36,7 @@ h1 {
     text-transform: capitalize;
     letter-spacing: 1px;
     color: black;
+    text-align: center;
 }
 
 header a {

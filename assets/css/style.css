@@ -15,7 +15,9 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: red;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 /* Page Header Style */
@@ -24,8 +26,9 @@ header {
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: none;
 }
 
 /* Main Content Style */

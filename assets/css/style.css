@@ -10,7 +10,7 @@
 
 /* Page Body Style */
 body {
-    background-color: black;
+    background-color: bisque;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ header a {
     list-style-type: none;
 }
 
-#navlist > li {
+#navlist>li {
     margin-bottom: .3em;
 }
 
@@ -85,6 +85,7 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+    padding: 0 0.5rem
 }
 
 /* Main Content Style */
@@ -96,25 +97,34 @@ main {
 }
 
 /* Page Footer Style */
-footer {
-    background-color: cyan;
+#socials {
+    background-color: darkgray;
+    text-align: center;
+    padding: 20px 0;display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#socials i {
+    font-size: 160%;
+    padding: 5%;
+    color: bisque;
 }
 
 /* MEDIA QUERIES */
 /* Mobiles & Above (>378px) */
 @media screen and (min-width: 378px) {
+
     /* Page Main Content */
     main {
         margin-top: 83px;
-    }    
+    }
 }
-
-
-
 
 
 /* Tablets & Above (>768px) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -128,7 +138,7 @@ footer {
         display: flex;
     }
 
-    #navlist > li {
+    #navlist>li {
         padding-left: 1rem;
     }
 
@@ -159,13 +169,14 @@ footer {
     main {
         margin-top: 105px;
     }
-    
+
 }
 
 /* Desktops & Above (>1127px) */
 @media screen and (min-width: 1127px) {
+
     /* Page Main Content */
     main {
         margin-top: 65px;
-    }    
+    }
 }

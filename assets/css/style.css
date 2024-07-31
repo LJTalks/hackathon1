@@ -1,5 +1,7 @@
 /* Importaing Google Fonts "Montserrat" */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
@@ -17,7 +19,7 @@ body {
     /* Generic Styles */
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 /* Page Header Style */
@@ -185,6 +187,33 @@ main {
     margin: auto;
 }
 
+.listlevel1 {
+    padding-left: 20px;
+}
+
+.listlevel2 {
+    padding-left: 20px;
+}
+
+.resourcelink {
+    font-weight: bold;
+    font-style: italic;
+    font-size: normal;
+    text-decoration: none;
+}
+
+.redditlink {
+    font-weight: bold;
+    font-size: normal;
+    text-decoration: none;
+    font-family: 'Courier Prime', Courier, monospace, sans-serif;
+}
+
+.handshake {
+    font-size: 250%;
+    font-weight: 900;
+    text-align: center;
+}
 
 /* MEDIA QUERIES */
 /* Mobiles & Above (>378px) */
@@ -219,7 +248,7 @@ main {
         width: 70%;
         margin: auto;
     }
-    
+
 
 }
 
@@ -244,7 +273,7 @@ main {
         width: 70%;
         margin: auto;
     }
-    
+
 }
 
 /* Tablets & Above (>768px) */
@@ -284,6 +313,14 @@ main {
 
     .local-header {
         margin-top: 100px;
+    }
+
+    .listlevel1 {
+        padding-left: 40px;
+    }
+    
+    .listlevel2 {
+        padding-left: 40px;
     }
 }
 

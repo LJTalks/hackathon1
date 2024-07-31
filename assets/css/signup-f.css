@@ -1,3 +1,6 @@
+/* Importaing Google Fonts "Montserrat" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Main content for sign up*/
 main {
     flex: 1 0 auto;
@@ -8,7 +11,7 @@ main {
 
 /* Form for the sign up*/
 #signup {
-    background-image: none;
+    background-image: url("../images/subscribe.img.jpeg");
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;

@@ -35,6 +35,35 @@ header {
     align-items: center;
 }
 
+.visualid {
+    /* text-align: center; */
+    display: flex;
+}
+
+.visualid_div1 {
+    display: inline-block;
+    /* width: 10%; */
+    vertical-align: middle;
+    position: relative;
+    margin-left: 10px;
+}
+
+.visualid_div2 {
+    /* display: inline-block; */
+    /*vertical-align: middle; */
+    margin-left: 15px;
+}
+
+
+.visualid_div1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    width: 2.5rem;
+    /* vertical-align: bottom; */
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -230,6 +259,10 @@ main {
         margin: 10px 10px;
     }
 
+    #logo img {
+        width: 2.5rem;
+    }
+
     /* Resources Navbar */
     .local-header {
         margin-top: 100px;
@@ -305,6 +338,8 @@ main {
         line-height: 40px;
         margin: 10px 10px;
     }
+
+    
 
     /* Page Main Content */
     main {

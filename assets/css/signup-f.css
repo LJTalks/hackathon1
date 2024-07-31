@@ -1,0 +1,31 @@
+/* Main content for sign up*/
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form for the sign up*/
+#signup {
+    background-image: none;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    color: blueviolet;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: blanchedalmond;
+    margin-bottom: 30px;
+}
+
+.text-input {
+    background: transparent;
+}

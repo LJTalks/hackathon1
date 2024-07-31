@@ -99,3 +99,29 @@ main {
 footer {
     background-color: cyan;
 }
+
+/* MEDIA QUERIES */
+/* Tablets & Above (>768px) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #navlist {
+        display: flex;
+    }
+
+    #navlist > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
+

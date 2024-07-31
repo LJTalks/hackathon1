@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
+/*Delete this before submitting. New colour pallette for reference
+bisque is now Linen #faf0e6 backgrounds)*/
+
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
     padding: 0;
@@ -12,7 +15,7 @@
 
 /* Page Body Style */
 body {
-    background-color: bisque;
+    background-color: #faf0e6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -122,10 +125,19 @@ nav {
 
 /* Main Content Style */
 main {
-    background-color: bisque;
+    /* Remove before submitting. Laura updated this to add hero image. Removed 
+    background-color: #faf0e6;  (new colourway) to add hero image*/
+
     /* Main Content to take up all vertical space  */
     flex: 1 0 auto;
     margin-top: 120px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
 }
 
 /* Page Footer Style */
@@ -141,7 +153,7 @@ main {
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: bisque;
+    color: #faf0e6;
 }
 
 

@@ -40,6 +40,7 @@ h1 {
     letter-spacing: 1px;
     color: black;
     text-align: center;
+    margin: 10px 10px;
 }
 
 header a {
@@ -111,6 +112,64 @@ main {
     color: bisque;
 }
 
+
+/* Local Navbar Resources */
+.local-header {
+    background-color: lightslategray;
+    font-weight: 600;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    box-shadow: 0 5px 5px darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 98px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
+
+#navresources ul {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+#navresources li {
+    display: inline;
+    margin-right: .3rem;
+}
+
+/* Main Content Resources */
+.resources > h2 {
+    font-size: 130%;
+    padding: 1rem 0 .5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.resources > h3 {
+    font-size: 100%;
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+.resources > h4 {
+    font-size: 80%;
+    padding-bottom: .5rem;
+}
+
+.resources > p {
+    font-size: normal;
+    padding-bottom: .8rem;
+}
+
+#allresources {
+    width: 70%;
+    margin: auto;
+}
+
+
 /* MEDIA QUERIES */
 /* Mobiles & Above (>378px) */
 @media screen and (min-width: 378px) {
@@ -119,7 +178,21 @@ main {
     main {
         margin-top: 83px;
     }
+
+    #logo {
+        font-size: 200%;
+        line-height: 40px;
+        margin: 10px 10px;
+    }
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 60px;
+    }
 }
+
+
+
 
 
 /* Tablets & Above (>768px) */
@@ -154,9 +227,12 @@ main {
 
     /* Page Main Content */
     main {
-        margin-top: 185px;
+        margin-top: 120px;
     }
-}
+
+    .local-header {
+        margin-top: 100px;  
+    }
 
 /* Laptops & Above (>992px) */
 @media screen and (min-width: 992px) {
@@ -167,7 +243,15 @@ main {
 
     /* Page Main Content */
     main {
-        margin-top: 105px;
+        margin-top: 85px;
+    }
+
+    .local-header {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: 100%;
+        padding-right: 1rem;
     }
 
 }
@@ -178,5 +262,14 @@ main {
     /* Page Main Content */
     main {
         margin-top: 65px;
+    }
+}
+
+/* XWide Screens (>1440px) */
+@media screen and (min-width: 1127px) {
+
+    /* Page Main Content */
+    main {
+        margin-top: 80px;
     }
 }

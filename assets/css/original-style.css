@@ -1,9 +1,6 @@
 /* Importaing Google Fonts "Montserrat" */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Delete this before submitting. New colour pallette for reference
-bisque is now Linen #faf0e6 backgrounds)*/
-
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
     padding: 0;
@@ -13,7 +10,7 @@ bisque is now Linen #faf0e6 backgrounds)*/
 
 /* Page Body Style */
 body {
-    background-color: #faf0e6;
+    background-color: bisque;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -93,19 +90,10 @@ nav {
 
 /* Main Content Style */
 main {
-    /* Remove before submitting. Laura updated this to add hero image. Removed 
-    background-color: #faf0e6;  (new colourway) to add hero image*/
-
+    background-color: bisque;
     /* Main Content to take up all vertical space  */
     flex: 1 0 auto;
     margin-top: 120px;
-}
-
-/* Hero section */
-#hero {
-    height: 600px;
-    width: 100%;
-    background-color: lightgreen;
 }
 
 /* Page Footer Style */
@@ -120,7 +108,7 @@ main {
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: #faf0e6;
+    color: bisque;
 }
 
 /* MEDIA QUERIES */

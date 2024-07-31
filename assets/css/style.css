@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 5px 5px darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -59,11 +62,37 @@ header a {
     font-weight: 900;
 }
 
+/* Dropdown Navbar Menu Styles */
+nav {
+    position: absolute;
+    background-color: lightslategray;
+    width: 100%;
+    left: 0;
+    padding: 0 2rem;
+    box-shadow: 0 5px 5px darkgoldenrod;
+    display: none;
+    top: 100%;
+}
+
+/* Nav Toggle Check Box */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 /* Main Content Style */
 main {
     background-color: bisque;
     /* Main Content to take up all vertical space  */
-    flex: 1 0 auto
+    flex: 1 0 auto;
+    margin-top: 125px;
 }
 
 /* Page Footer Style */

@@ -374,6 +374,7 @@ p i {
 }
 
 /* MEDIA QUERIES */
+/* Multiple breakpoints required to accomodate proper responsiveness with the local navbar on the resources.html file */
 /* Mobiles & Above (>378px) */
 @media screen and (min-width: 378px) {
 
@@ -532,6 +533,8 @@ p i {
         width: 60%;
     }
 }
+
+/* Tablets & Above (>890px) */
 
 /* Laptops & Above (>992px) */
 @media screen and (min-width: 992px) {

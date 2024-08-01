@@ -1,5 +1,11 @@
 /* Importaing Google Fonts "Montserrat" */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*Delete this before submitting. New colour pallette for reference
+bisque is now Linen #faf0e6 backgrounds)
+lightslategrey is now #a8add1*/
 
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
@@ -10,36 +16,69 @@
 
 /* Page Body Style */
 body {
-    background-color: bisque;
+    background-color: #faf0e6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: black;
+    color: #3b2851;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
-/* Page Header Style */
-header {
-    background-color: lightslategray;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 5px 5px darkgoldenrod;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-transform: capitalize;
     letter-spacing: 1px;
-    color: black;
+    color: #3b2851;
     text-align: center;
+    margin: 10px 10px;
+}
+
+/* Page Header Style */
+header {
+    background-color: #a8add1;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 5px 5px #7e679b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3b2851;
+}
+
+.visualid {
+    /* text-align: center; */
+    display: flex;
+}
+
+.visualid_div1 {
+    display: inline-block;
+    /* width: 10%; */
+    vertical-align: middle;
+    position: relative;
+    margin-left: 10px;
+}
+
+.visualid_div2 {
+    /* display: inline-block; */
+    /*vertical-align: middle; */
+    margin-left: 15px;
+}
+
+
+.visualid_div1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    width: 2.5rem;
+    /* vertical-align: bottom; */
 }
 
 header a {
@@ -65,11 +104,11 @@ header a {
 /* Dropdown Navbar Menu Styles */
 nav {
     position: absolute;
-    background-color: lightslategray;
+    background-color: #a8add1;
     width: 100%;
     left: 0;
     padding: 0 2rem;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: none;
     top: 100%;
 }
@@ -90,25 +129,248 @@ nav {
 
 /* Main Content Style */
 main {
-    background-color: bisque;
     /* Main Content to take up all vertical space  */
     flex: 1 0 auto;
     margin-top: 120px;
 }
 
+p i {
+    color: #ffcc00;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero.webp) no-repeat center center/cover;
+    position: relative;
+}
+
+
+#cover-text {
+    background-color: rgba(168, 173, 209, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 0;
+    padding-left: 2px;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: #faf0e6;
+    text-align: left;
+}
+
+/* General Section Styles */
+
+#welcome .section {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome .image,
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+#welcome .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 150%;
+}
+
+.section .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 90%;
+
+}
+
+.section .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .image img {
+    max-width: 80%;
+    height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome h2 {
+    margin-top: 20px;
+}
+
+#welcome p {
+    margin: 40px auto;
+}
+
+.text .top {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Specific Section Styles */
+#welcome {
+    text-align: left;
+}
+
+#welcome-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#mission i,
+#offer i,
+#discover i,
+#journey i {
+    margin-left: 10px;
+}
+
+#journey {
+    margin-top: 10px;
+}
+
+
 /* Page Footer Style */
 #socials {
-    background-color: darkgray;
+    background-color: #a8add1;
     text-align: center;
-    padding: 20px 0;display: flex;
+    padding: 20px 0 10px 0;
+    display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: #a8add1;
+    font-size: smaller;
+    color: #3b2851;
 }
 
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: bisque;
+    color: #3b2851;
+}
+
+
+/* Local Navbar Resources */
+.local-header {
+    background-color: #a8add1;
+    font-weight: 600;
+    color: #3b2851;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    box-shadow: 0 5px 5px #7e679b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 98px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
+
+#navresources ul {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+#navresources li {
+    display: inline;
+    margin-right: .3rem;
+}
+
+/* Main Content Resources */
+/* Resources Main */
+.main-resources {
+    margin-top: 80px;
+}
+
+.resources>h2 {
+    font-size: 130%;
+    padding: 1rem 0 .5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.resources>h3 {
+    font-size: 100%;
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+.resources>h4 {
+    font-size: 80%;
+    padding-bottom: .5rem;
+}
+
+.resources>p {
+    font-size: normal;
+    padding-bottom: .8rem;
+}
+
+#allresources {
+    width: 70%;
+    margin: auto;
+}
+
+.main-resources p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 900;
+    width: 70%;
+    margin: auto;
+}
+
+.listlevel1 {
+    padding-left: 20px;
+}
+
+.listlevel2 {
+    padding-left: 20px;
+}
+
+.resourcelink {
+    font-weight: bold;
+    font-style: italic;
+    font-size: normal;
+    text-decoration: none;
+}
+
+.redditlink {
+    font-weight: bold;
+    font-size: normal;
+    text-decoration: none;
+    font-family: 'Courier Prime', Courier, monospace, sans-serif;
+}
+
+.handshake {
+    font-size: 250%;
+    font-weight: 900;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -119,8 +381,65 @@ main {
     main {
         margin-top: 83px;
     }
+
+    #logo {
+        font-size: 200%;
+        line-height: 40px;
+        margin: 10px 10px;
+        color: #3b2851;
+    }
+
+    #logo img {
+        width: 2.5rem;
+    }
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 100px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 100px;
+    }
+
+    .main-resources p {
+        padding: 3rem;
+        text-align: center;
+        font-size: 150%;
+        font-weight: 900;
+        width: 70%;
+        margin: auto;
+    }
+
+
 }
 
+/* Mobiles under (>388px) */
+
+/* Mobiles & Above (>388px) */
+@media screen and (min-width: 388px) {
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 60px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 80px;
+    }
+
+    .main-resources p {
+        padding: 2rem;
+        text-align: center;
+        font-size: 200%;
+        font-weight: 600;
+        width: 70%;
+        margin: auto;
+    }
+
+}
 
 /* Tablets & Above (>768px) */
 @media screen and (min-width: 768px) {
@@ -152,9 +471,65 @@ main {
         margin: 10px 10px;
     }
 
+
+
     /* Page Main Content */
     main {
-        margin-top: 185px;
+        margin-top: 120px;
+    }
+
+    .local-header {
+        margin-top: 100px;
+    }
+
+    .listlevel1 {
+        padding-left: 40px;
+    }
+
+    .listlevel2 {
+        padding-left: 40px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 600px;
+        left: 0px;
+    }
+
+    /*Welcome*/
+    #welcome .section {
+        flex-direction: row;
+    }
+
+    #welcome .image .text {
+        flex: 1;
+        width: auto;
+    }
+
+    #welcome .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+
+    #welcome .section.forward {
+        flex-direction: column;
+    }
+
+    #welcome .section.reverse {
+        flex-direction: row-reverse;
+    }
+
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 20px;
+    }
+
+    .main-resources p {
+        width: 60%;
     }
 }
 
@@ -167,7 +542,25 @@ main {
 
     /* Page Main Content */
     main {
-        margin-top: 105px;
+        margin-top: 10px;
+    }
+
+    .local-header {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: 100%;
+        padding-right: 1rem;
+        box-shadow: 0 5px 5px 3 #7e679b;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 20px;
+    }
+
+    .main-resources p {
+        width: 50%;
     }
 
 }
@@ -178,5 +571,28 @@ main {
     /* Page Main Content */
     main {
         margin-top: 65px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 0px;
+    }
+
+    .main-resources p {
+        width: 50%;
+    }
+
+}
+
+/* XWide Screens (>1440px) */
+@media screen and (min-width: 1127px) {
+
+    /* Page Main Content */
+    main {
+        margin-top: 80px;
+    }
+
+    .main-resources p {
+        width: 60%;
     }
 }

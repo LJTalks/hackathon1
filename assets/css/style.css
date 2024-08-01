@@ -4,7 +4,8 @@
 
 
 /*Delete this before submitting. New colour pallette for reference
-bisque is now Linen #faf0e6 backgrounds)*/
+bisque is now Linen #faf0e6 backgrounds)
+lightslategrey is now #a8add1*/
 
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
@@ -20,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: black;
+    color: #3b2851 ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -32,10 +33,11 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #3b2851 ;
 }
 
 .visualid {
@@ -100,11 +102,11 @@ header a {
 /* Dropdown Navbar Menu Styles */
 nav {
     position: absolute;
-    background-color: lightslategray;
+    background-color: #a8add1;
     width: 100%;
     left: 0;
     padding: 0 2rem;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: none;
     top: 100%;
 }
@@ -137,35 +139,44 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url../images/hero.jpg;
+    background: url(../images/hero.webp) no-repeat center center/cover;
+}
 
 
 /* Page Footer Style */
 #socials {
-    background-color: darkgray;
+    background-color: #a8add1;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
+.footer-copyright {
+    text-align: center;
+    background-color: #a8add1;
+    font-size: smaller;
+    color: #3b2851;
+}
+
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: #faf0e6;
+    color: #7e679b;
 }
 
 
 /* Local Navbar Resources */
 .local-header {
-    background-color: lightslategray;
+    background-color: #a8add1;
     font-weight: 600;
+    color: #3b2851;
     padding: 0 1rem;
     position: fixed;
     z-index: 98;
     width: 100%;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,6 +280,7 @@ main {
         font-size: 200%;
         line-height: 40px;
         margin: 10px 10px;
+        color: #3b2851;
     }
 
     #logo img {
@@ -407,7 +419,7 @@ main {
         box-shadow: none;
         width: 100%;
         padding-right: 1rem;
-        box-shadow: 0 5px 5px darkgoldenrod;
+        box-shadow: 0 5px 5px 3 #7e679b ;
     }
 
     /* Resources Main */

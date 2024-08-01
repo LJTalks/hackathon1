@@ -21,12 +21,14 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: #3b2851 ;
+    color: #3b2851;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-transform: capitalize;
@@ -47,7 +49,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #3b2851 ;
+    color: #3b2851;
 }
 
 .visualid {
@@ -152,11 +154,121 @@ main {
     padding-left: 2px;
 }
 
-#cover-text >h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #faf0e6;
     text-align: left;
 }
 
+/* General Section Styles */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 150%;
+}
+
+.section.forward {
+    flex-direction: column;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 90%;
+
+}
+
+.section .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .image img {
+    max-width: 80%;
+    height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome h2 {
+    margin-top: 20px;
+}
+
+#welcome p {
+    margin: 40px auto;
+}
+
+.text .top {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Specific Section Styles */
+#welcome {
+    text-align: left;
+}
+
+#welcome-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#mission i, #offer i, #discover i, #journey i {
+    margin-left: 10px;
+}
+
+#journey {
+    margin-top: 10px;
+}
+
+
+/* Welcome Section
+
+
+
+#welcome {
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 150%;
+    }
+
+    #welcome-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mission {
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 110%;
+    }
+
+    #offer () #discover {}
+
+    #journey {}
+}
+*/
 /* Page Footer Style */
 #socials {
     background-color: #a8add1;
@@ -377,7 +489,7 @@ main {
         margin: 10px 10px;
     }
 
-    
+
 
     /* Page Main Content */
     main {
@@ -391,7 +503,7 @@ main {
     .listlevel1 {
         padding-left: 40px;
     }
-    
+
     .listlevel2 {
         padding-left: 40px;
     }
@@ -439,7 +551,7 @@ main {
         box-shadow: none;
         width: 100%;
         padding-right: 1rem;
-        box-shadow: 0 5px 5px 3 #7e679b ;
+        box-shadow: 0 5px 5px 3 #7e679b;
     }
 
     /* Resources Main */

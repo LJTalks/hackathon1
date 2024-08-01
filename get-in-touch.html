@@ -19,6 +19,7 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/get-in-touch.css">
 </head>
 
 <body>
@@ -37,61 +38,25 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="signup.html">Subscribe</a></li>
-                <li><a href="./get-in-touch.html">Contact</a></li>
+                <li><a href="getintouch.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section id="hero">
-            <!--Video link 
-            https://videos.pexels.com/video-files/5977502/5977502-sd_640_360_25fps.mp4
--->
-
-            <div id="cover-text">
-                <h2>Empowering Junior Developers</h2>
-                <h3>Wellbeing Strategies for Success</h3>
-            </div>
-        </section>
-        <!--Welcome Section-->
-        <section id="welcome">
-            <div>
-                <div class="text">
-                    <h2>Welcome to your ultimate Wellbeing Guide, specifically designed for junior full stack developers
-                        navigating the challenges of a remote work environment.</h2>
-                </div>
-            </div>
-            <div class="section reverse">
-                <div class="image">
-                    <img id="welcome-img" src="./assets/images/pexels-diva-plavalaguna-6147019.jpg" alt="Welcome Image">
-                </div>
-                <div class="text">
-                    <p class="top">Dive into our detailed guides, practical tips, and expert advice on everything from
-                        managing stress and building resilience to maintaining a balanced lifestyle. <i class="fa-solid fa-book"></i></p>
-                    <p class="bottom">Our mission is to provide you with comprehensive resources to support your emotional, mental, and
-                        physical health. <i class="fa-solid fa-thumbs-up"></i></p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="image">
-                    <img id="welcome-img" src="./assets/images/pexels-photo-katrin-bolotvtsova-4049876.webp"
-                        alt="Happy lady at desk">
-                </div>
-                <div class="text">
-                    <p class="top"><i class="fa-solid fa-heart-pulse"></i> Discover how to thrive both personally and
-                        professionally
-                        by
-                        prioritizing your wellbeing.</p>
-                    <p class="bottom"><i class="fa-solid fa-seedling"></i> Start your journey towards a healthier,
-                        happier
-                        you
-                        today!</p>
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main id="contact-page">
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <h2>Get in Touch!</h2>
+                <h3>Send us your comments, ask us a question, give us some feedback!</h3>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
     <!-- Page Footer -->

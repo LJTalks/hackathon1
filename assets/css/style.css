@@ -127,9 +127,6 @@ nav {
 
 /* Main Content Style */
 main {
-    /* Remove before submitting. Laura updated this to add hero image. Removed 
-    background-color: #faf0e6;  (new colourway) to add hero image*/
-
     /* Main Content to take up all vertical space  */
     flex: 1 0 auto;
     margin-top: 120px;

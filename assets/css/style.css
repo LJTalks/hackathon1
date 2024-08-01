@@ -144,14 +144,15 @@ p i {
     width: 100%;
     background: url(../images/hero.webp) no-repeat center center/cover;
     position: relative;
+
 }
 
 
-#cover-text {
+#hero #cover-text {
     background-color: rgba(168, 173, 209, 0.7);
     font-size: 130%;
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     width: 80%;
     min-height: 200px;
     padding-top: 0;

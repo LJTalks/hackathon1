@@ -1,0 +1,74 @@
+/* Reset some default styles for better cross-browser compatibility */
+body, h2, h3, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background image and styling */
+body {
+    background: url("/assets/images/pexels-olly-andrea=piacquadio.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+
+#contact-page {
+    padding: 40px 0;
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #7e678b;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2, .contact-form h3 {
+    color: #7e678b; 
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #7e678b; /* Font color */
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a8add1;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7e678b;
+}

@@ -27,7 +27,7 @@ body {
 
 /* Page Header Style */
 header {
-    background-color: lightslategray;
+    background-color: #a8add1;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -137,8 +137,8 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background-color: lightgreen;
-}
+    background: url../images/hero.jpg;
+
 
 /* Page Footer Style */
 #socials {

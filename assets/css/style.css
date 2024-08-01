@@ -26,6 +26,16 @@ body {
     font-weight: 400;
 }
 
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #3b2851;
+    text-align: center;
+    margin: 10px 10px;
+}
+
 /* Page Header Style */
 header {
     background-color: #a8add1;
@@ -67,16 +77,6 @@ header {
     transform: translateX(-50%)translateY(-50%);
     width: 2.5rem;
     /* vertical-align: bottom; */
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    color: black;
-    text-align: center;
-    margin: 10px 10px;
 }
 
 header a {
@@ -140,8 +140,25 @@ main {
     height: 600px;
     width: 100%;
     background: url(../images/hero.webp) no-repeat center center/cover;
+    position: relative;
 }
 
+
+#cover-text {
+    background-color: rgba(168, 173, 209, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 0;
+    padding-left: 2px;
+}
+
+#cover-text >h2, #cover-text > h3 {
+    color: #faf0e6;
+    text-align: left;
+}
 
 /* Page Footer Style */
 #socials {
@@ -380,6 +397,12 @@ main {
     
     .listlevel2 {
         padding-left: 40px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 600px;
+        left: 0px;
     }
 }
 

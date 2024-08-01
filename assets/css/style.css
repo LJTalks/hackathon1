@@ -4,7 +4,8 @@
 
 
 /*Delete this before submitting. New colour pallette for reference
-bisque is now Linen #faf0e6 backgrounds)*/
+bisque is now Linen #faf0e6 backgrounds)
+lightslategrey is now #a8add1*/
 
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
@@ -20,22 +21,35 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic Styles */
-    color: black;
+    color: #3b2851;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #3b2851;
+    text-align: center;
+    margin: 10px 10px;
+}
+
 /* Page Header Style */
 header {
-    background-color: lightslategray;
+    background-color: #a8add1;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #3b2851;
 }
 
 .visualid {
@@ -67,16 +81,6 @@ header {
     /* vertical-align: bottom; */
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    color: black;
-    text-align: center;
-    margin: 10px 10px;
-}
-
 header a {
     text-decoration: none;
     color: inherit;
@@ -100,11 +104,11 @@ header a {
 /* Dropdown Navbar Menu Styles */
 nav {
     position: absolute;
-    background-color: lightslategray;
+    background-color: #a8add1;
     width: 100%;
     left: 0;
     padding: 0 2rem;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: none;
     top: 100%;
 }
@@ -125,47 +129,160 @@ nav {
 
 /* Main Content Style */
 main {
-    /* Remove before submitting. Laura updated this to add hero image. Removed 
-    background-color: #faf0e6;  (new colourway) to add hero image*/
-
     /* Main Content to take up all vertical space  */
     flex: 1 0 auto;
     margin-top: 120px;
+}
+
+p i {
+    color: #ffcc00;
 }
 
 /* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background-color: lightgreen;
+    background: url(../images/hero.webp) no-repeat center center/cover;
+    position: relative;
 }
+
+
+#cover-text {
+    background-color: rgba(168, 173, 209, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 0;
+    padding-left: 2px;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: #faf0e6;
+    text-align: left;
+}
+
+/* General Section Styles */
+
+#welcome .section {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome .image,
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+#welcome .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 150%;
+}
+
+.section .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 90%;
+
+}
+
+.section .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .image img {
+    max-width: 80%;
+    height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome h2 {
+    margin-top: 20px;
+}
+
+#welcome p {
+    margin: 40px auto;
+}
+
+.text .top {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Specific Section Styles */
+#welcome {
+    text-align: left;
+}
+
+#welcome-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#mission i,
+#offer i,
+#discover i,
+#journey i {
+    margin-left: 10px;
+}
+
+#journey {
+    margin-top: 10px;
+}
+
 
 /* Page Footer Style */
 #socials {
-    background-color: darkgray;
+    background-color: #a8add1;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
+.footer-copyright {
+    text-align: center;
+    background-color: #a8add1;
+    font-size: smaller;
+    color: #3b2851;
+}
+
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: #faf0e6;
+    color: #3b2851;
 }
 
 
 /* Local Navbar Resources */
 .local-header {
-    background-color: lightslategray;
+    background-color: #a8add1;
     font-weight: 600;
+    color: #3b2851;
     padding: 0 1rem;
     position: fixed;
     z-index: 98;
     width: 100%;
-    box-shadow: 0 5px 5px darkgoldenrod;
+    box-shadow: 0 5px 5px #7e679b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,6 +386,7 @@ main {
         font-size: 200%;
         line-height: 40px;
         margin: 10px 10px;
+        color: #3b2851;
     }
 
     #logo img {
@@ -296,6 +414,8 @@ main {
 
 
 }
+
+/* Mobiles under (>388px) */
 
 /* Mobiles & Above (>388px) */
 @media screen and (min-width: 388px) {
@@ -351,7 +471,7 @@ main {
         margin: 10px 10px;
     }
 
-    
+
 
     /* Page Main Content */
     main {
@@ -365,19 +485,43 @@ main {
     .listlevel1 {
         padding-left: 40px;
     }
-    
+
     .listlevel2 {
         padding-left: 40px;
     }
-}
 
-/* Tablets & Above (>869px) */
-@media screen and (min-width: 869px) {
+    /* Hero */
+    #cover-text {
+        width: 600px;
+        left: 0px;
+    }
 
-    /* Resources Navbar */
-    .local-header {
+    /*Welcome*/
+    #welcome .section {
+        flex-direction: row;
+    }
+
+    #welcome .image .text {
+        flex: 1;
+        width: auto;
+    }
+
+    #welcome .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-top: 60px;
     }
+
+
+    #welcome .section.forward {
+        flex-direction: column;
+    }
+
+    #welcome .section.reverse {
+        flex-direction: row-reverse;
+    }
+
 
     /* Resources Main */
     .main-resources {
@@ -407,7 +551,7 @@ main {
         box-shadow: none;
         width: 100%;
         padding-right: 1rem;
-        box-shadow: 0 5px 5px darkgoldenrod;
+        box-shadow: 0 5px 5px 3 #7e679b;
     }
 
     /* Resources Main */

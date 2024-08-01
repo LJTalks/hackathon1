@@ -1,5 +1,10 @@
 /* Importaing Google Fonts "Montserrat" */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*Delete this before submitting. New colour pallette for reference
+bisque is now Linen #faf0e6 backgrounds)*/
 
 /* Overriding Default Style Using Asterisk Wildcard */
 * {
@@ -10,14 +15,14 @@
 
 /* Page Body Style */
 body {
-    background-color: black;
+    background-color: #faf0e6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic Styles */
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 /* Page Header Style */
@@ -28,6 +33,38 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 5px 5px darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visualid {
+    /* text-align: center; */
+    display: flex;
+}
+
+.visualid_div1 {
+    display: inline-block;
+    /* width: 10%; */
+    vertical-align: middle;
+    position: relative;
+    margin-left: 10px;
+}
+
+.visualid_div2 {
+    /* display: inline-block; */
+    /*vertical-align: middle; */
+    margin-left: 15px;
+}
+
+
+.visualid_div1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    width: 2.5rem;
+    /* vertical-align: bottom; */
 }
 
 h1 {
@@ -37,6 +74,7 @@ h1 {
     letter-spacing: 1px;
     color: black;
     text-align: center;
+    margin: 10px 10px;
 }
 
 header a {
@@ -50,7 +88,7 @@ header a {
     list-style-type: none;
 }
 
-#navlist > li {
+#navlist>li {
     margin-bottom: .3em;
 }
 
@@ -59,14 +97,358 @@ header a {
     font-weight: 900;
 }
 
+/* Dropdown Navbar Menu Styles */
+nav {
+    position: absolute;
+    background-color: lightslategray;
+    width: 100%;
+    left: 0;
+    padding: 0 2rem;
+    box-shadow: 0 5px 5px darkgoldenrod;
+    display: none;
+    top: 100%;
+}
+
+/* Nav Toggle Check Box */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    padding: 0 0.5rem
+}
+
 /* Main Content Style */
 main {
-    background-color: bisque;
+    /* Remove before submitting. Laura updated this to add hero image. Removed 
+    background-color: #faf0e6;  (new colourway) to add hero image*/
+
     /* Main Content to take up all vertical space  */
-    flex: 1 0 auto
+    flex: 1 0 auto;
+    margin-top: 120px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
 }
 
 /* Page Footer Style */
-footer {
-    background-color: cyan;
+#socials {
+    background-color: darkgray;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#socials i {
+    font-size: 160%;
+    padding: 5%;
+    color: #faf0e6;
+}
+
+
+/* Local Navbar Resources */
+.local-header {
+    background-color: lightslategray;
+    font-weight: 600;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    box-shadow: 0 5px 5px darkgoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 98px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
+
+#navresources ul {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+#navresources li {
+    display: inline;
+    margin-right: .3rem;
+}
+
+/* Main Content Resources */
+/* Resources Main */
+.main-resources {
+    margin-top: 80px;
+}
+
+.resources>h2 {
+    font-size: 130%;
+    padding: 1rem 0 .5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.resources>h3 {
+    font-size: 100%;
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+.resources>h4 {
+    font-size: 80%;
+    padding-bottom: .5rem;
+}
+
+.resources>p {
+    font-size: normal;
+    padding-bottom: .8rem;
+}
+
+#allresources {
+    width: 70%;
+    margin: auto;
+}
+
+.main-resources p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 900;
+    width: 70%;
+    margin: auto;
+}
+
+.listlevel1 {
+    padding-left: 20px;
+}
+
+.listlevel2 {
+    padding-left: 20px;
+}
+
+.resourcelink {
+    font-weight: bold;
+    font-style: italic;
+    font-size: normal;
+    text-decoration: none;
+}
+
+.redditlink {
+    font-weight: bold;
+    font-size: normal;
+    text-decoration: none;
+    font-family: 'Courier Prime', Courier, monospace, sans-serif;
+}
+
+.handshake {
+    font-size: 250%;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+/* Mobiles & Above (>378px) */
+@media screen and (min-width: 378px) {
+
+    /* Page Main Content */
+    main {
+        margin-top: 83px;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 40px;
+        margin: 10px 10px;
+    }
+
+    #logo img {
+        width: 2.5rem;
+    }
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 100px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 100px;
+    }
+
+    .main-resources p {
+        padding: 3rem;
+        text-align: center;
+        font-size: 150%;
+        font-weight: 900;
+        width: 70%;
+        margin: auto;
+    }
+
+
+}
+
+/* Mobiles & Above (>388px) */
+@media screen and (min-width: 388px) {
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 60px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 80px;
+    }
+
+    .main-resources p {
+        padding: 2rem;
+        text-align: center;
+        font-size: 200%;
+        font-weight: 600;
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+/* Tablets & Above (>768px) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #navlist {
+        display: flex;
+    }
+
+    #navlist>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 40px;
+        margin: 10px 10px;
+    }
+
+    
+
+    /* Page Main Content */
+    main {
+        margin-top: 120px;
+    }
+
+    .local-header {
+        margin-top: 100px;
+    }
+
+    .listlevel1 {
+        padding-left: 40px;
+    }
+    
+    .listlevel2 {
+        padding-left: 40px;
+    }
+}
+
+/* Tablets & Above (>869px) */
+@media screen and (min-width: 869px) {
+
+    /* Resources Navbar */
+    .local-header {
+        margin-top: 60px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 20px;
+    }
+
+    .main-resources p {
+        width: 60%;
+    }
+}
+
+/* Laptops & Above (>992px) */
+@media screen and (min-width: 992px) {
+    #navlist a:hover {
+        font-style: bold;
+        font-weight: 900;
+    }
+
+    /* Page Main Content */
+    main {
+        margin-top: 10px;
+    }
+
+    .local-header {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: 100%;
+        padding-right: 1rem;
+        box-shadow: 0 5px 5px darkgoldenrod;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 20px;
+    }
+
+    .main-resources p {
+        width: 50%;
+    }
+
+}
+
+/* Desktops & Above (>1127px) */
+@media screen and (min-width: 1127px) {
+
+    /* Page Main Content */
+    main {
+        margin-top: 65px;
+    }
+
+    /* Resources Main */
+    .main-resources {
+        margin-top: 0px;
+    }
+
+    .main-resources p {
+        width: 50%;
+    }
+
+}
+
+/* XWide Screens (>1440px) */
+@media screen and (min-width: 1127px) {
+
+    /* Page Main Content */
+    main {
+        margin-top: 80px;
+    }
+
+    .main-resources p {
+        width: 60%;
+    }
 }

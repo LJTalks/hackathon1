@@ -9,6 +9,18 @@ main {
     flex-direction: column;
 }
 
+/* Page Body Style */
+body {
+    background-color: #faf0e6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic Styles */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 /* Form for the sign up*/
 #signup {
     background-image: url("../images/subscribe.img.jpeg");

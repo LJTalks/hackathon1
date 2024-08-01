@@ -165,21 +165,25 @@ p i {
 }
 
 /* General Section Styles */
-.section {
+
+#welcome .section {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome .image,
+.text {
+    width: 100%;
+    text-align: center;
+}
+
+#welcome .section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     margin: 20px auto;
     font-size: 150%;
-}
-
-.section.forward {
-    flex-direction: column;
-}
-
-.section.reverse {
-    flex-direction: row-reverse;
 }
 
 .section .text {
@@ -233,7 +237,10 @@ p i {
     height: auto;
 }
 
-#mission i, #offer i, #discover i, #journey i {
+#mission i,
+#offer i,
+#discover i,
+#journey i {
     margin-left: 10px;
 }
 
@@ -242,37 +249,6 @@ p i {
 }
 
 
-/* Welcome Section
-
-
-
-#welcome {
-    .section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-        margin: 20px auto;
-        font-size: 150%;
-    }
-
-    #welcome-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #mission {
-        margin-bottom: 20px;
-        text-align: left;
-        font-size: 110%;
-    }
-
-    #offer () #discover {}
-
-    #journey {}
-}
-*/
 /* Page Footer Style */
 #socials {
     background-color: #a8add1;
@@ -293,7 +269,7 @@ p i {
 #socials i {
     font-size: 160%;
     padding: 5%;
-    color: #7e679b;
+    color: #3b2851;
 }
 
 
@@ -439,6 +415,8 @@ p i {
 
 }
 
+/* Mobiles under (>388px) */
+
 /* Mobiles & Above (>388px) */
 @media screen and (min-width: 388px) {
 
@@ -517,15 +495,33 @@ p i {
         width: 600px;
         left: 0px;
     }
-}
 
-/* Tablets & Above (>869px) */
-@media screen and (min-width: 869px) {
+    /*Welcome*/
+    #welcome .section {
+        flex-direction: row;
+    }
 
-    /* Resources Navbar */
-    .local-header {
+    #welcome .image .text {
+        flex: 1;
+        width: auto;
+    }
+
+    #welcome .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-top: 60px;
     }
+
+
+    #welcome .section.forward {
+        flex-direction: column;
+    }
+
+    #welcome .section.reverse {
+        flex-direction: row-reverse;
+    }
+
 
     /* Resources Main */
     .main-resources {

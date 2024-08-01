@@ -134,6 +134,10 @@ main {
     margin-top: 120px;
 }
 
+p i {
+    color: #ffcc00;
+}
+
 /* Hero section */
 #hero {
     height: 600px;

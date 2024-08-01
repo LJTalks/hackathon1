@@ -1,0 +1,76 @@
+/* Importaing Google Fonts "Montserrat" */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Main content for sign up*/
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form for the sign up*/
+#signup {
+    background-image: url("../images/subscribe.img.jpeg");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    color: blueviolet;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 30px;
+}
+
+#signup-form>h2 {
+    color: blanchedalmond;
+    margin-bottom: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color: blanchedalmond;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #008080;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #7e679b;
+    color: #008080;
+}
+
+/* Media query: tablets and larger screen (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Sign up form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color:  #008080;
+    }
+
+    .join-button:hover {
+        background-color: #a8add1;
+        color: #7e679b;
+    }
+}

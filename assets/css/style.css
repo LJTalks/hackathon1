@@ -374,6 +374,7 @@ p i {
 }
 
 /* MEDIA QUERIES */
+/* Multiple breakpoints required to accomodate proper responsiveness with the local navbar on the resources.html file */
 /* Mobiles & Above (>378px) */
 @media screen and (min-width: 378px) {
 
@@ -533,6 +534,19 @@ p i {
     }
 }
 
+/* Tablets & Above (>890px) */
+    /* Resources Main */
+    @media screen and (min-width: 890px) {
+    .main-resources {
+            margin-top: 20px;
+    }
+    
+    .local-header {
+        margin-top: 60px;
+    }
+}
+
+
 /* Laptops & Above (>992px) */
 @media screen and (min-width: 992px) {
     #navlist a:hover {
@@ -545,18 +559,18 @@ p i {
         margin-top: 10px;
     }
 
-    .local-header {
+    /* .local-header {
         display: block;
         position: relative;
         box-shadow: none;
         width: 100%;
         padding-right: 1rem;
         box-shadow: 0 5px 5px 3 #7e679b;
-    }
+    } */
 
     /* Resources Main */
     .main-resources {
-        margin-top: 20px;
+        margin-top: 120px;
     }
 
     .main-resources p {
@@ -575,11 +589,11 @@ p i {
 
     /* Resources Main */
     .main-resources {
-        margin-top: 0px;
+        margin-top: 60px;
     }
 
     .main-resources p {
-        width: 50%;
+        width: 30%;
     }
 
 }
